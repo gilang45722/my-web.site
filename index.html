@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latar Belakang Fullscreen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            height: 100vh; /* Setiap bagian mengambil tinggi penuh layar */
+            width: 100%;
+            background-size: cover; /* Memastikan gambar memenuhi layar */
+            background-position: center; /* Gambar dipusatkan */
+            background-repeat: no-repeat; /* Gambar tidak berulang */
+        }
+
+        /* Gambar latar untuk setiap bagian */
+        .section:nth-child(1) {
+            background-image: url('gak ada.png'); /* File PNG pertama */
+        }
+
+        .section:nth-child(2) {
+            background-image: url('gambar 2.jpg'); /* File JPG kedua */
+        }
+
+        .section:nth-child(3) {
+            background-image: url('gambar 3.jpg'); /* File JPG ketiga */
+        }
+
+        .section:nth-child(4) {
+            background-image: url('gambar terahir.jpg'); /* File JPG keempat */
+        }
+
+        .section:nth-child(5) {
+            background-image: url('gtw.png'); /* File PNG kelima */
+        }
+    </style>
+</head>
+<body>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+</body>
+</html>
